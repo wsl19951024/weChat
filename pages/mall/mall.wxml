@@ -1,0 +1,22 @@
+<!--pages/mall/mall.wxml-->
+<scroll-view
+  scroll-y
+  bindscrolltolower="loadMore"
+  bindscrolltoupper="refresh"
+  lower-threshold="150"
+  class='flower'
+>
+      <view class='flowers-list-ct' wx:for="{{flowers}}" wx:key="item.id" bindtap='toDetail' data-id="{{item.id}}">
+        <image src='{{imgs[index]}}'></image>
+          <view class='text' >
+            <text>{{title[index]}}</text>
+            <text>￥{{item.cinemaCount}}</text>
+          </view>
+          <button catchtap='addToCart' data-id='{{item.id}}'>加入购物车</button>
+      </view>
+      <view wx:if="{{page === total}}">
+        <view class="weui-loadmore weui-loadmore_line">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view>
+      </view>
+</scroll-view>

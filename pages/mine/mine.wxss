@@ -1,0 +1,123 @@
+/* pages/mine/mine.wxss */
+.information{
+  width: 100%;
+  height: 200rpx;
+}
+.header{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  border-bottom:5rpx solid #dedede; 
+}
+.header .image{
+  width: 120rpx;
+  height: 120rpx;
+  padding: 0 20rpx;
+  border-radius:50%; 
+}
+.header .text{
+  display: flex;
+  flex-direction: column;
+}
+.huanyin{
+  color: #fe5478;
+  font-size: 30rpx;
+}
+.order{
+  width: 100%;
+  height: 300rpx;
+  margin-top: 10rpx;
+  border-bottom: 10rpx solid #dedede;
+}
+.order .top {
+  height: 150rpx;
+  line-height: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30rpx;
+  border-bottom: 2rpx solid #dedede;
+}
+.order .top .left image {
+  width: 44rpx;
+  height: 48rpx;
+}
+.order .top .left text{
+  width: 44rpx;
+  height: 46rpx;
+  color: #999;
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+.order .bt {
+  height: 150rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.order .bt view {
+  display: flex;
+  flex-direction: column;
+}
+.order .bt view  text{
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+}
+.order .bt view image {
+  width: 52rpx;
+  height: 44rpx;
+  text-align: center;
+  padding-left: 20rpx;
+}
+.todo{
+  width: 100%;
+  height: 400rpx;
+  margin-top: 10rpx;
+  border-bottom: 10rpx solid #dedede;
+}
+.todo .ct {
+  display: flex;
+  width: 90%;
+  height: 100rpx;
+  border-bottom: 2rpx solid #dedede;
+  margin: 0 30rpx;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.todo .ct .img{
+  width: 44rpx;
+  height: 52rpx;
+}
+.todo .ct .img image{
+  width: 44rpx;
+  height: 52rpx;
+}
+.todo .ct .text{
+  position: absolute;
+  font-size: 30rpx;
+  left: 60rpx;
+  color: #999;
+  /* margin-left: -400rpx; */
+}
+.todo .ct .text .hassite{
+  font-size: 26rpx;
+}
+.todo .ct .to{
+  font-size: 40rpx;
+  color: #999;
+}
+.location {
+  margin-bottom: 30rpx;
+}
+.location text{
+  font-size: 32rpx;
+  color: #2fcf9f;
+  padding-right: 20rpx;
+}
+.location image{
+  padding-top: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}

@@ -1,0 +1,48 @@
+<!--pages/detail/cart.wxml-->
+<view class='cart-wrap'>
+  <view class='cart-body'>
+    <view wx:if="{{hasData}}">
+      <view class="weui-loadmore weui-loadmore_line">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无商品</view>
+      </view>
+    </view>
+    <view  class='content' wx:for="{{cart}}" wx:key="{{item.id}}" >
+     <view class='check'>
+      <checkbox value="" checked="{{item.checked}}" catchtap='cartItemChecked' data-id="{{item.id}}"/>
+     </view>
+     <view class='img'>
+      <image src='{{imgs[index]}}'></image>
+     </view>
+      <view class='info'>
+        <view><text>{{title[index]}}</text></view>
+        <view class='price'><text>￥{{item.cinemaCount}}</text></view>
+      </view>
+      <view class='todo'>
+        <view class='inc' catchtap='dec' data-id='{{item.id}}'>-</view>
+        <view class='num'><input 
+        type="text" 
+        value='{{item.count}}'
+        bindblur="getC" 
+        data-id="{{item.id}}"
+        /></view>
+        <view class='add' catchtap='inc' data-id='{{item.id}}'>+</view>
+      </view>
+      <view class='delete'>
+        <button catchtap='delete' data-id='{{item.id}}'>删除</button>
+      </view>
+    </view>
+  </view>
+  <view class='cart-footNavbar'>
+    <view class='left'>
+      <view class='check'>
+        <checkbox value="" checked="{{allChecked}}" catchtap='cartAllChecked' data-checked ='{{allChecked}}'/>全选
+      </view>
+      <view class='allprice'>
+        <text>合计：￥{{totalPrice}}</text>
+      </view>
+    </view>
+    <view class='right' catchtap='toPay'>
+      <text>结算({{totalCount}})</text>
+    </view>
+  </view>
+</view>

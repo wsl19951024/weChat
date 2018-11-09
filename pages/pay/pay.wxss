@@ -1,0 +1,5 @@
+/* pages/pay/pay.wxss */
+.img{
+  width: 50rpx;
+  height: 50rpx
+}

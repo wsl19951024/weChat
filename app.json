@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/mall/mall",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/logs/logs",
+    "pages/pay/pay"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fe5478",
+    "navigationBarTitleText": "爱尚鲜花",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#666",
+    "selectedColor":"#f00",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath":"assets/img/home.png",
+        "selectedIconPath":"assets/img/home-selected.png"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "全部商品",
+        "iconPath": "assets/img/mall.png",
+        "selectedIconPath": "assets/img/mall-selected.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assets/img/cart.png",
+        "selectedIconPath": "assets/img/cart-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/img/mine.png",
+        "selectedIconPath": "assets/img/mine-selected.png"
+      }
+    ]
+  }
+}

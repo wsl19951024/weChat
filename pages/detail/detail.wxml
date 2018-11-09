@@ -1,0 +1,50 @@
+<!--pages/detail/detail.wxml-->
+<view class='wrap'>
+  <view class='detail-body'>
+    <swiper indicator-dots
+      autoplay="true" interval="5000" duration="500">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='msg' wx:for="{{flower}}" wx:key="{{item.id}}">
+      <view class='title'><text>{{item.name}}</text></view>
+      <view class='price'><text>￥{{item.cinemaCount}}</text></view>
+      <view class='yunfei'><text>免运费</text></view>
+    </view>
+    <view class='kuanshi'>
+      <view class='title'>款式</view>
+      <view class='ct'>
+        <view 
+        wx:for="{{kuanshi}}"
+        wx:key="index"
+        class="{{isChecked?'is_checked':'normal'}}" 
+        catchtap='changeStyle' data-index = '{{index}}'>
+          <text>{{kuanshi[index]}}</text>
+        </view>
+      </view>  
+    </view>
+  </view>
+  <view class='footNavbar'>
+    <view class='left'>
+      <view class='gohome' catchtap='goHome'>
+        <image src='../../assets/img/home-detail.png'></image>
+        <text>首页</text>
+      </view>
+      <view class='cart' catchtap='goCart'>
+        <image src='../../assets/img/cart.png'></image>
+        <text>购物车</text>
+      </view>
+    </view>
+    <view class='right'>
+      <view class='addtocart' catchtap='addToCart'>
+        加入购物车
+      </view>
+      <view class='tobuy' catchtap='toPay'>
+        立即购买
+      </view>
+    </view>
+  </view>
+</view>

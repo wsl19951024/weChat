@@ -1,0 +1,124 @@
+/* pages/detail/detail.wxss */
+page{
+  color: #555;
+  height: 100%;
+}
+page .cart-wrap{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cart-body{
+  flex: 1;
+  overflow-x: hidden;
+  margin-bottom: 124rpx;
+}
+.cart-body .content{
+  position: relative;
+  width: 100%;
+  height: 240rpx;
+  border-bottom: 1rpx solid #999;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.cart-body .content .check{
+  padding-right:26rpx; 
+}
+.cart-body .content .img image{
+  width: 162rpx;
+  height: 162rpx;
+  padding-right: 26rpx;
+}
+.cart-body .content .info{
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+.cart-body .content .info .price{
+  color: #fe5478;
+  padding-top: 20rpx;
+}
+.cart-body .content .todo{
+  display: flex;
+  width: 160rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 240rpx;
+  bottom: 60rpx;
+}
+.cart-body .content .todo .inc{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 5px 0 0 5px;
+  border: 1rpx solid #999;
+  border-right: none;
+  line-height: 50rpx;
+  text-align: center;
+}
+.cart-body .content .todo .num{
+  width: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  border: 1rpx solid #999;
+  text-align: center;
+}
+.cart-body .content .todo .num textarea{
+  width: 60rpx;
+  height: 50rpx;
+}
+.cart-body .content .todo .add{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 0 5px 5px 0;
+  border: 1rpx solid #999;
+  line-height: 50rpx;
+  text-align: center;
+  border-left: none;
+}
+.cart-body .content .delete button{
+  width: 120rpx;
+  height: 60rpx;
+  color: red;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  position: absolute;
+  bottom: 50rpx;
+  right: 100rpx;
+}
+.cart-footNavbar{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+}
+.cart-footNavbar .left{
+  width: 70%;
+  float: left;
+  height: 100rpx;
+  border-top: 1rpx solid #999;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  align-items: center;
+}
+.cart-footNavbar .left .check{
+  font-size: 30rpx;
+}
+.cart-footNavbar .left .allprice{
+  font-size: 30rpx;
+  color:  #fe5478;
+}
+.cart-footNavbar .right{
+  width: 30%;
+  float: left;
+  height: 100rpx;
+  color: #ffffff;
+  background:#fe5478;
+  text-align: center;
+  line-height: 100rpx;
+}
+

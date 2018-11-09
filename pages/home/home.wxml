@@ -1,0 +1,104 @@
+<!--pages/home/home.wxml-->
+<scroll-view>
+  <swiper indicator-dots
+    autoplay="true" interval="5000" duration="500">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='navbar'>
+    <navigator url="/pages/mall/mall">
+      <image src='http://resource.iishang.com/home/category/c4a0dc71-2e7a-4877-a2f1-7719acebc244.gif'></image>
+      <text>订阅惊喜</text>
+    </navigator>
+    <navigator url="/pages/mall/mall">
+      <image src='http://resource.iishang.com/home/category/1556cd26-ac68-4be9-aa44-e1e26812e29f.gif'></image>
+      <text>极速送花</text>
+    </navigator>
+    <navigator url="/pages/mall/mall">
+    <image src='http://resource.iishang.com/home/category/dd2258f9-a63e-45b8-9694-edbcaeeb51d4.gif'></image>
+      <text>永生花礼</text>
+    </navigator>
+    <navigator url="/pages/mall/mall">
+      <image src='http://resource.iishang.com/home/category/838e8f10-f271-44db-8f05-47a5dfab6f68.gif'></image>
+      <text>花边小物</text>
+    </navigator>
+  </view>
+  <view class='lighter'>
+    <view class='title'>
+      <text>限时抢购</text> 
+      <navigator>></navigator>
+    </view>
+    <view class='content'>
+      <view class='content-left' catchtap='toMall'>
+        <image src='http://resource.iishang.com/home/product/f48f7d6c-d46f-490f-a6fb-38ea61e286fa.jpg'></image>
+        <view class='text' >
+          <text>向日葵</text>
+          <text>￥39.90</text>
+        </view>
+      </view>
+      <view class='content-right' catchtap='toMall'>
+        <image src='http://resource.iishang.com/home/product/c4397837-4bda-4403-a09f-a8230392fa32.jpg'></image>
+        <view class='text'>
+          <text>许愿流行瓶蓝牙音箱</text>
+          <text>￥198.00</text>
+        </view>
+      </view>
+    </view>
+    <view class='title'>
+      <text>订阅惊喜</text> 
+      <navigator>></navigator>
+    </view>
+    <view class='subscription'>
+      <view class='subscription-ct' wx:for="{{subscription}}" wx:key="index" catchtap='toMall'>
+        <image src='{{item.img}}'></image>
+          <view class='text'>
+            <text>{{item.title}}</text>
+            <text>￥{{item.price}}</text>
+          </view>
+      </view>
+    </view>
+    <view class='title'>
+        <text>单束花礼</text> 
+        <navigator>></navigator>
+    </view>
+    <view class='singleflowergift'>
+      <view class='singleflowergift-ct' wx:for="{{singleflowergift}}" wx:key="index" catchtap='toMall'>
+        <image src='{{item.img}}'></image>
+        <view class='text'>
+          <text>{{item.title}}</text>
+          <text>￥{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='title'>
+        <text>永生花礼</text> 
+        <navigator>></navigator>
+    </view>
+    <view class='immortal'>
+      <view class='immortal-ct' wx:for="{{immortal}}" wx:key="index" catchtap='toMall'>
+        <image src='{{item.img}}'></image>
+        <view class='text'>
+          <text>{{item.title}}</text>
+          <text>￥{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='title'>
+        <text>花边小物</text> 
+        <navigator>></navigator>
+    </view>
+    <view class='macrame'>
+      <view class='macrame-ct' wx:for="{{macrame}}" wx:key="index" catchtap='toMall'>
+        <image src='{{item.img}}'></image>
+        <view class='text'>
+          <text>{{item.title}}</text>
+          <text>￥{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
